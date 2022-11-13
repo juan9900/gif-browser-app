@@ -3,7 +3,7 @@ import { AddCategory } from './components';
 import { GifGrid } from './components';
 
 export const GifBrowserApp = () => {
-    const [categories, setCategories] = useState([]);
+    const [categories, setCategories] = useState(['vertical']);
 
     const onAddCategory = (newCategory) => {
 

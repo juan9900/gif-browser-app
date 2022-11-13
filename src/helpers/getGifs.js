@@ -2,13 +2,14 @@ const API_KEY = 'LsoNqri62zRep4edNaJ0XCk1SjRxAJdl';
 
 export const getGifs = async (category) => {
     try{
-        const response = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${category}&limit=15`);
+        const response = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${category}&limit=16`);
         const {data} = await response.json();
         // console.log(data);
         const gifs = data.map(img => ({
             id: img.id,
             title: img.title,
-            url: img.images.fixed_height.url
+            url: img.images.fixed_height.url,
+            shareLink: img.url
         }));
         console.log(gifs);
         return gifs;

@@ -44,11 +44,15 @@ input:focus {
 
 .gif-topic-container {
   margin-bottom: 4rem;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; */
+  display: grid;
+  row-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
   list-style-type: none;
+  align-items: center;
 }
 
 .gif-topic-container h2 {
@@ -77,11 +81,16 @@ input:focus {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   transition: all 0.3s;
-  background-color: #00000085;
+  background-color: #000000c8;
   border-radius: 10px;
+}
+
+.gif-link-container > div {
+  width: 100%;
+  transform: translateY(-10%);
 }
 
 .gif-container {
@@ -90,7 +99,7 @@ input:focus {
 
 .gif-link-container h4 {
   text-transform: uppercase;
-  padding: 1rem 0;
+  font-size: 1.6rem;
 }
 
 .gif a {
@@ -115,6 +124,7 @@ input:focus {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
+  margin-top: 1rem;
 }
 
 .gif-share-container i {
