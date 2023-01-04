@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests for <GifItem /> should return a snapshot 1`] = `
+<div>
+  <div
+    class="gif"
+  >
+    <div
+      class="gif-container"
+    >
+      <div
+        class="gif-link-container"
+      >
+        <div>
+          <h4>
+            Share
+          </h4>
+          <div
+            class="gif-share-container"
+          >
+            <a
+              href="http://one-punch.com/saitama.jpg"
+              target="_blank"
+            >
+              <i
+                class="fa-brands fa-whatsapp"
+              />
+            </a>
+            <a
+              href="http://one-punch.com/saitama.jpg"
+              target="_blank"
+            >
+              <i
+                class="fa-brands fa-twitter"
+              />
+            </a>
+            <a
+              href="https://twitter.com/intent/tweet/text?=http://one-punch.giphy.com/saitama.jpg  via @Giphy"
+              target="_blank"
+            >
+              <i
+                class="fa-solid fa-download"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <img
+        alt="One Punch"
+        src="http://one-punch.com/saitama.jpg"
+      />
+    </div>
+    <h3>
+      One Punch
+    </h3>
+  </div>
+</div>
+`;

@@ -11,7 +11,6 @@ export const getGifs = async (category) => {
             url: img.images.fixed_height.url,
             shareLink: img.url
         }));
-        console.log(gifs);
         return gifs;
         // setGifList(prev => data.images.preview_gif.url, ...prev);
     }catch(e){

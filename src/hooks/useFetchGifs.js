@@ -4,7 +4,6 @@ export const useFetchGifs = (category) => {
 
     const [gifList, setGifList] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
-    let gifs = [];
 
     async function fetchGifApi(){
         setGifList(await getGifs(category));
